@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NECC</title>
-    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <!-- Scripts-->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    <style>
-        #home {
-        }
-    </style>
 </head>
 <body class="">
-    <nav class="bg-white p-5 fixed w-full z-10">
+    <nav class="bg-white dark:bg-gray-700 p-5 fixed w-full z-10">
         <div class="container mx-auto flex items-center justify-between flex-wrap">
-            <div class="flex items-center flex-shrink-0 text-gray-500 mr-6">
-                <span class="font-semibold text-2xl sm:text-2xl tracking-tight">NECC</span>
+            <div class="flex items-center flex-shrink-0 text-gray-500 dark:text-gray-300 mr-6">
+               <span class="font-semibold text-2xl sm:text-2xl tracking-tight">NECC</span>
             </div>
             <div class="block lg:hidden">
                 <button onclick="navbarToggle()" class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-gray-500 hover:border-gray-900">
@@ -24,394 +22,130 @@
             </div>
             <div id="navbar-items" class="w-full hidden lg:block lg:flex lg:items-center lg:w-auto">
                 <div class="font-semibold text-base">
-                    <a href="#home" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200 mr-4">
+                    <a href="#home" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200 mr-4">
                         Início
                     </a>
-                    <a href="#about-me" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200 mr-4">
+                    <a href="#about-me" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200 mr-4">
                         Sobre
                     </a>
-                    <a href="#team" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200 mr-4">
+                    <a href="#team" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200 mr-4">
                         Equipa
                     </a>
-                    <a href="#partners" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200 mr-4">
+                    <a href="#partners" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200 mr-4">
                         Parceiros
                     </a>
-                    <a href="#contacts" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200">
+                    <a href="#contacts" class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200">
                         Contactos
                     </a>
 
                     <button id="darkmode" 
-                        class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 rounded hover:text-blue-600 hover:bg-gray-200
+                        class="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 text-gray-500 dark:text-gray-300 rounded dark:hover:text-blue-600 hover:bg-gray-200
                         font-semibold text-base duration-300 ease-in-out focus:outline-none focus:ring-2" onclick="toggleDarkMode(this)">Dark Mode</button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="">
-        <section id="home" class="min-h-screen bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 flex items-center justify-center">
+    <main id="app" class="">
+        <section id="home" class="min-h-screen bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 dark:from-blue-600 dark:via-blue-700 dark:to-blue-600 flex items-center justify-center">
             <h1 class="font-semibold text-white text-4xl">&lt;NECC&gt;</h1>
         </section>
 
-        <section id="about-me" class="bg-gray-100 py-32">
+        <section id="about-me" class="bg-gray-100 dark:bg-gray-600 py-32">
             <article class="container mx-auto flex flex-col items-center justify-center p-5">
                 <header class="mb-4">
-                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 border-b-4 border-blue-400">O que é o NECC?</h2>
+                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 dark:text-white border-b-4 border-blue-400">O que é o NECC?</h2>
                 </header>
-                <p class="lg:w-6/12 text-justify text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="lg:w-6/12 text-justify text-gray-800 dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
         </section>
 
-        <section id="team" class="bg-blue-100 py-24">
+        <section id="team" class="bg-blue-100 dark:bg-blue-800 py-24">
             <article class="container mx-auto flex flex-col items-center justify-center p-5">
                 <header class="mb-16">
-                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 border-b-4 border-blue-400">A nossa equipa</h2>
+                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 dark:text-white border-b-4 border-blue-400">A nossa equipa</h2>
                 </header>
                 <div class="flex flex-row flex-wrap justify-evenly md:hidden">
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow rounded-xl md:rounded-md p-0 overflow-hidden flex flex-row justify-center items-center m-2">
-                        <img class="rounded-none h-24 w-24" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-gray-700 mb-1">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </figcaption>
-                    </figure>
+                    <card-mobile v-for="card in cardMembers"
+                        v-bind:link="card.imageSrc"
+                        v-bind:name="card.name"
+                        v-bind:role="card.role">
+                    </card-mobile>
                 </div>
                 <div class="hidden md:grid">
                     <div class="grid md:grid-cols-5">
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
+                        <card-member v-for="n in 5"
+                            v-bind:link="cardMembers[n-1].imageSrc"
+                            v-bind:name="cardMembers[n-1].name"
+                            v-bind:role="cardMembers[n-1].role">
+                        </card-member>
                     </div>
                     <div class="grid md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 lg:grid-rows-1">
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div><div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
+                        <card-member v-for="n in 8"
+                            v-bind:link="cardMembers[n+4].imageSrc"
+                            v-bind:name="cardMembers[n+4].name"
+                            v-bind:role="cardMembers[n+4].role">
+                        </card-member>
                     </div>
                     <div class="grid md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 lg:grid-rows-1">
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div><div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
-                        <div class="bg-white shadow rounded-md p-5 flex flex-col justify-center items-center m-2">
-                            <img class="rounded-full" src="https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g" alt="">
-                            <h3 class="font-semibold text-gray-700">John Smith</h3>
-                            <span class="rounded-full bg-blue-500 text-sm py-1 px-2 font-semibold text-gray-200">Presidente</span>
-                        </div>
+                        <card-member v-for="n in 8"
+                            v-bind:link="cardMembers[n+12].imageSrc"
+                            v-bind:name="cardMembers[n+12].name"
+                            v-bind:role="cardMembers[n+12].role">
+                        </card-member>
                     </div>
                 </div>
             </article>
         </section>
 
-        <section id="partners" class="bg-indigo-200 py-24">
-            <article class="container mx-auto flex flex-col items-center">
+        <section id="partners" class="bg-indigo-200 dark:bg-indigo-600 py-24">
+            <article class="container mx-auto flex flex-col items-center p-5">
                 <header class="mb-16">
-                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 border-b-4 border-blue-400">Os nossos parceiros</h2>
+                    <h2 class="font-semibold leading-tight text-2xl text-gray-900 dark:text-white border-b-4 border-blue-400">Os nossos parceiros</h2>
                 </header>
                 <div class="flex flex-row flex-wrap justify-evenly">
-                    <figure class="bg-white shadow-lg rounded-xl md:rounded-md p-0  m-2 overflow-hidden flex flex-row justify-center items-center max-w-2xl">
-                        <img class="rounded-none h-48 w-48" src="https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg" alt="">
-                        <figcaption class="p-4 flex flex-col justify-around h-full">
-                            <h3 class="font-semibold text-xl text-gray-800 mb-1">Coke</h3>
-                            <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <span class="text-blue-500 text-sm"><ion-icon name="location-outline"></ion-icon> Rua Nova de Santa Cruz Nº99</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow-lg rounded-xl md:rounded-md p-0  m-2 overflow-hidden flex flex-row justify-center items-center max-w-2xl">
-                        <img class="rounded-none h-48 w-48" src="https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg" alt="">
-                        <figcaption class="p-4 flex flex-col justify-around h-full">
-                            <h3 class="font-semibold text-xl text-gray-700 mb-1">Coke</h3>
-                            <p class="text-gray-500 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <span class="text-gray-500 text-sm"><ion-icon name="location-outline" size="small"></ion-icon>Rua Nova de Santa Cruz Nº99</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow-lg rounded-xl md:rounded-md p-0  m-2 overflow-hidden flex flex-row justify-center items-center max-w-3xl">
-                        <img class="rounded-none h-48 w-48" src="https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-xl text-gray-700 mb-1">Coke</h3>
-                            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow-lg rounded-xl md:rounded-md p-0  m-2 overflow-hidden flex flex-row justify-center items-center max-w-3xl">
-                        <img class="rounded-none h-48 w-48" src="https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-xl text-gray-700 mb-1">Coke</h3>
-                            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="bg-white shadow-lg rounded-xl md:rounded-md p-0  m-2 overflow-hidden flex flex-row justify-center items-center max-w-3xl">
-                        <img class="rounded-none h-48 w-48" src="https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg" alt="">
-                        <figcaption class="p-4">
-                            <h3 class="font-semibold text-xl text-gray-700 mb-1">Coke</h3>
-                            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-                    </figure>
+                    <card-sponsor v-for="n in 4"
+                        v-bind:link="cardSponsor[0].imageSrc"
+                        v-bind:brand="cardSponsor[0].brand"
+                        v-bind:description="cardSponsor[0].description"
+                        v-bind:address="cardSponsor[0].address">
+                    </card-sponsor>
                 </div>
             </article>
         </section>
     </main>
 
-    <footer id="contacts" class="w-full bg-gray-700 py-16">
+    <footer id="contacts" class="w-full bg-gray-700 pt-16">
         <div class="container mx-auto">
-            <div class="flex flex-row justify-evenly mb-5">
+            <div class="flex flex-row justify-evenly items-start mb-5">
                 <ul class="flex flex-col justify-evenly">
                     <li>
-                        <h2>Segue-nos</h2>
+                        <h2 class="text-2xl text-white mb-2">Segue-nos</h2>
                     </li>
-                    <li>
-                        <a class="text-4xl text-gray-100 mb-2" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <li class="mb-1">
+                        <a class="text-base text-gray-200 mb-2 flex items-center" href=""><ion-icon class="mr-2" name="logo-instagram" size="large"></ion-icon> Instagram</a>
                     </li>
-                    <li>
-                        <a class="text-4xl text-gray-100 mb-2" href=""><ion-icon name="logo-discord"></ion-icon></a>
+                    <li class="mb-1">
+                        <a class="text-base text-gray-200 mb-2 flex items-center" href=""><ion-icon class="mr-2" name="logo-discord" size="large"></ion-icon> Discord</a>
                     </li>
-                    <li>
-                        <a class="text-4xl text-gray-100 mb-2" href=""><ion-icon name="logo-github"></ion-icon></a>
+                    <li class="mb-1">
+                        <a class="text-base text-gray-200 mb-2 flex items-center" href=""><ion-icon class="mr-2" name="logo-github" size="large"></ion-icon> Github</a>
                     </li>
                 </ul>
                 <ul class="flex flex-col justify-evenly">
                     <li>
-                        <h2>Encontra-nos</h2>
+                        <h2 class="text-2xl text-white mb-2">Encontra-nos</h2>
                     </li>
                     <li>
-                        <p class="text-base text-gray-100 mb-2" href=""><ion-icon name="mail-outline" size="large"></ion-icon> contact</p>
+                        <p class="text-base text-gray-200 mb-2 flex items-center" href=""><ion-icon class="mr-2" name="mail-outline" size="large"></ion-icon> necc@di.uminho.pt</p>
                     </li>
                     <li>
-                        <a class="text-4xl text-gray-100 mb-2" href=""><ion-icon name="location-outline"></ion-icon> localização</a>
-                    </li>
-                    <li>
-                        <a class="text-4xl text-gray-100 mb-2" href="">contact</a>
+                        <a class="text-base text-gray-200 mb-2 flex items-center" href=""><ion-icon class="mr-2" name="location-outline" size="large"></ion-icon> DI piso 2 sala 9.9</a>
                     </li>
                 </ul>
             </div>
             
-            <p class="text-center w-full">Developed by David Machado</p>
+            <p class="text-xl text-bold text-blue-300 font-mono text-center w-full py-7">Developed by David Machado</p>
         </div>
     </footer>
 
@@ -447,5 +181,6 @@
             }
         }
     </script>
+    <script src="./js/card.js"></script>
 </body>
 </html>
