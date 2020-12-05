@@ -25,9 +25,9 @@ Vue.component('card-member', {
 Vue.component('card-sponsor', {
     props: ['link', 'brand', 'description', 'address'],
     template: `
-    <figure class="bg-white dark:bg-gray-600 shadow-xl rounded-xl p-0  my-4 mx-2 overflow-hidden flex flex-row justify-center items-center max-w-2xl">
-        <img class="rounded-none h-48 w-48" v-bind:src="link" alt="">
-        <figcaption class="p-4 flex flex-col justify-around h-full">
+    <figure class="bg-white dark:bg-gray-600 shadow-xl rounded-xl p-0  my-4 mx-2 overflow-hidden flex flex-row justify-center items-center max-w-2xl relative sm:static group">
+        <img class="rounded-none h-80 sm:h-48 sm:w-48" v-bind:src="link" alt="">
+        <figcaption class="p-4 h-full absolute bg-gray-600 sm:static hidden group-hover:flex sm:flex flex-col justify-around">
             <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-200 mb-1">{{ brand }}</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-2">{{ description }}</p>
             <span class="text-blue-500 dark:text-blue-300 text-sm"><ion-icon name="location-outline"></ion-icon> {{ address }}</span>
