@@ -1,0 +1,32 @@
+{
+  "name": "necc-website",
+  "version": "1.0.0",
+  "description": "Website do Núcleo de Estudantes de LCC",
+  "main": "index.html",
+  "scripts": {
+    "build:html": "html-minifier --collapse-whitespace src/index.html -o ./dist/index.html",
+    "build:css": "postcss ./src/css/tailwind.css -o ./dist/css/tailwind.min.css",
+    "build:js": "minify ./src/js/card.js > ./dist/js/card.min.js | minify ./src/js/main.js > ./dist/js/main.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantik-git/NECC-Website.git"
+  },
+  "author": "David Machado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quantik-git/NECC-Website/issues"
+  },
+  "homepage": "https://github.com/quantik-git/NECC-Website#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "autoprefixer": "^10.2.3",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "minify": "^6.0.1",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
