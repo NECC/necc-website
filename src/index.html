@@ -23,6 +23,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet"> 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/tailwind.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -77,8 +80,10 @@
 
     <main id="app">
         <section id="home"
-            class="min-h-screen bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 dark:from-gray-500 dark:via-gray-400 dark:to-gray-500 flex items-center justify-center transition-colors duration-500 ease-in-out">
-            <h1 class="font-semibold text-white text-4xl">&lt;NECC&gt;</h1>
+            class="min-h-screen flex flex-col items-center justify-center transition-colors duration-500 ease-in-out bg-fixed bg-center bg-cover bg-no-repeat"
+            style="background-image:linear-gradient(#3B82F6,rgba(59,130,246,0.5)), url(./img/splash-screen.jpg)">
+            <h1 class="text-white font-semibold text-9xl mb-4" style="font-family: 'Allerta Stencil', sans-serif;">NECC</h1>
+            <p class="text-white font-semibold uppercase text-xl">núcleo de estudantes de ciências da computação</p>
         </section>
 
         <section id="about-me" class="bg-gray-100 dark:bg-gray-700 py-32 transition-colors duration-500 ease-in-out">
@@ -160,17 +165,17 @@
                         <h2 class="text-xl text-white dark:text-blue-200 font-semibold mb-4">Segue-nos</h2>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://www.instagram.com/necc.uminho/">
                             <span class="icon-logo-instagram text-4xl mr-2"></span>Instagram
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://bit.ly/discordLCC">
                             <span class="icon-logo-discord text-4xl mr-2"></span>Discord
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://github.com/NECC-GitHub">
                             <span class="icon-logo-github text-4xl mr-2"></span>Github
                         </a>
                     </li>
@@ -180,14 +185,14 @@
                         <h2 class="text-xl text-white dark:text-blue-200 font-semibold mb-4">Encontra-nos</h2>
                     </li>
                     <li class="mb-3">
-                        <p class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="mailto:necc@di.uminho.pt">
                             <span class="icon-mail-outline text-4xl mr-2"></span>necc@di.uminho.pt
-                        </p>
+                        </a>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 mb-2 flex items-center" href="">
+                        <p class="text-base text-gray-100 dark:text-gray-300 mb-2 flex items-center">
                             <span class="icon-location-outline text-4xl mr-2"></span>DI sala 1.1
-                        </a>
+                        </p>
                     </li>
                 </ul>
             </div>
