@@ -49,107 +49,107 @@ var app = new Vue({
         ],
         cardMembers: [
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Francisco_Teofilo.jpg",
                 name : "Francisco Teófilo",
-                role : "Secretário"    
+                role : "Secretário"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Pedro_Gomes.jpg",
                 name : "Pedro Gomes",
-                role : "Tesoureiro"    
+                role : "Tesoureiro"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Joel_Pinto.jpg",
                 name : "Joel Pinto",
-                role : "Presidente"    
+                role : "Presidente"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Margarida_Araujo.jpg",
                 name : "Margarida Araújo",
-                role : "Vice-Presidente"    
+                role : "Vice-Presidente"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Henrique_Faria.jpg",
                 name : "Henrique Faria",
-                role : "Vogal"    
+                role : "Vogal"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_David_Machado.jpg",
                 name : "David Machado",
-                role : "D. Pedagógico"    
+                role : "D. Pedagógico"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Bruno_Machado.jpg",
                 name : "Bruno Machado",
-                role : "Pedagógico"    
+                role : "Pedagógico"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Tomas_Campinho.jpg",
                 name : "Tomás Campinho",
-                role : "Pedagógico"    
+                role : "Pedagógico"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Miguel_Freitas.jpg",
                 name : "Miguel Freitas",
-                role : "D. Dev."    
+                role : "D. Dev."
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Joao_Guedes.jpg",
                 name : "João Guedes",
-                role : "Dev."    
+                role : "Dev."
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Rui_Torres.jpg",
                 name : "Rui Torres",
-                role : "D. Recreativo"    
+                role : "D. Recreativo"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Tiago_Carrico.jpg",
                 name : "Tiago Carriço",
-                role : "Recreativo"    
+                role : "Recreativo"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Goncalo_Braga.jpg",
                 name : "Gonçalo Braga",
-                role : "Recreativo"    
+                role : "Recreativo"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Afonso_Aarao.jpg",
                 name : "Afonso Aarão",
-                role : "D. Design"    
+                role : "D. Design"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Joao_Freitas.jpg",
                 name : "João Freitas",
-                role : "Design"    
+                role : "Design"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Ines_Martins.jpg",
                 name : "Inês Martins",
-                role : "Design"    
+                role : "Design"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Diogo_Rodrigues.jpg",
                 name : "Diogo Rodrigues",
-                role : "Design"    
+                role : "Design"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Pedro_Fernandes.jpg",
                 name : "Pedro Fernandes",
-                role : "D. Comunicação"    
+                role : "D. Comunicação"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
-                name : "Ines Presa",
-                role : "Comunicação"    
+                imageSrc : "img/avatar_Ines_Presa.jpg",
+                name : "Inês Presa",
+                role : "Comunicação"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Ana_Silva.jpg",
                 name : "Ana Silva",
-                role : "Comunicação"    
+                role : "Comunicação"
             },
             {
-                imageSrc : "https://secure.gravatar.com/avatar/fe55f92a1e32aa37fe85a45870a5488c?s=96&d=blank&r=g",
+                imageSrc : "img/avatar_Beatriz_Oliveira.jpg",
                 name : "Beatriz Oliveira",
                 role : "Comunicação"
             },

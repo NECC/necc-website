@@ -8,7 +8,7 @@
     "build:html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
     "build:img": "imagemin --out-dir=dist/img src/img/**/*.{png,jpg,gif}",
     "build:css": "postcss ./src/css/tailwind.css -o ./dist/css/tailwind.min.css",
-    "build:js": "minify ./src/js/card.js > ./dist/js/card.min.js | minify ./src/js/main.js > ./dist/js/main.min.js",
+    "build:js": "minify ./src/js/card.js > ./dist/js/card.min.js && minify ./src/js/main.js > ./dist/js/main.min.js",
     "build": "npm run build:css && npm run build:js && npm run build:html"
   },
   "repository": {
