@@ -49,107 +49,107 @@ var app = new Vue({
         ],
         cardMembers: [
             {
-                imageSrc : "img/avatar_Francisco_Teofilo.jpg",
+                imageSrc : "img/avatar_Francisco_Teofilo.webp",
                 name : "Francisco Teófilo",
                 role : "Secretário"
             },
             {
-                imageSrc : "img/avatar_Pedro_Gomes.jpg",
+                imageSrc : "img/avatar_Pedro_Gomes.webp",
                 name : "Pedro Gomes",
                 role : "Tesoureiro"
             },
             {
-                imageSrc : "img/avatar_Joel_Pinto.jpg",
+                imageSrc : "img/avatar_Joel_Pinto.webp",
                 name : "Joel Pinto",
                 role : "Presidente"
             },
             {
-                imageSrc : "img/avatar_Margarida_Araujo.jpg",
+                imageSrc : "img/avatar_Margarida_Araujo.webp",
                 name : "Margarida Araújo",
                 role : "Vice-Presidente"
             },
             {
-                imageSrc : "img/avatar_Henrique_Faria.jpg",
+                imageSrc : "img/avatar_Henrique_Faria.webp",
                 name : "Henrique Faria",
                 role : "Vogal"
             },
             {
-                imageSrc : "img/avatar_David_Machado.jpg",
+                imageSrc : "img/avatar_David_Machado.webp",
                 name : "David Machado",
                 role : "D. Pedagógico"
             },
             {
-                imageSrc : "img/avatar_Bruno_Machado.jpg",
+                imageSrc : "img/avatar_Bruno_Machado.webp",
                 name : "Bruno Machado",
                 role : "Pedagógico"
             },
             {
-                imageSrc : "img/avatar_Tomas_Campinho.jpg",
+                imageSrc : "img/avatar_Tomas_Campinho.webp",
                 name : "Tomás Campinho",
                 role : "Pedagógico"
             },
             {
-                imageSrc : "img/avatar_Miguel_Freitas.jpg",
+                imageSrc : "img/avatar_Miguel_Freitas.webp",
                 name : "Miguel Freitas",
                 role : "D. Dev."
             },
             {
-                imageSrc : "img/avatar_Joao_Guedes.jpg",
+                imageSrc : "img/avatar_Joao_Guedes.webp",
                 name : "João Guedes",
                 role : "Dev."
             },
             {
-                imageSrc : "img/avatar_Rui_Torres.jpg",
+                imageSrc : "img/avatar_Rui_Torres.webp",
                 name : "Rui Torres",
                 role : "D. Recreativo"
             },
             {
-                imageSrc : "img/avatar_Tiago_Carrico.jpg",
+                imageSrc : "img/avatar_Tiago_Carrico.webp",
                 name : "Tiago Carriço",
                 role : "Recreativo"
             },
             {
-                imageSrc : "img/avatar_Goncalo_Braga.jpg",
+                imageSrc : "img/avatar_Goncalo_Braga.webp",
                 name : "Gonçalo Braga",
                 role : "Recreativo"
             },
             {
-                imageSrc : "img/avatar_Afonso_Aarao.jpg",
+                imageSrc : "img/avatar_Afonso_Aarao.webp",
                 name : "Afonso Aarão",
                 role : "D. Design"
             },
             {
-                imageSrc : "img/avatar_Joao_Freitas.jpg",
+                imageSrc : "img/avatar_Joao_Freitas.webp",
                 name : "João Freitas",
                 role : "Design"
             },
             {
-                imageSrc : "img/avatar_Ines_Martins.jpg",
+                imageSrc : "img/avatar_Ines_Martins.webp",
                 name : "Inês Martins",
                 role : "Design"
             },
             {
-                imageSrc : "img/avatar_Diogo_Rodrigues.jpg",
+                imageSrc : "img/avatar_Diogo_Rodrigues.webp",
                 name : "Diogo Rodrigues",
                 role : "Design"
             },
             {
-                imageSrc : "img/avatar_Pedro_Fernandes.jpg",
+                imageSrc : "img/avatar_Pedro_Fernandes.webp",
                 name : "Pedro Fernandes",
                 role : "D. Comunicação"
             },
             {
-                imageSrc : "img/avatar_Ines_Presa.jpg",
+                imageSrc : "img/avatar_Ines_Presa.webp",
                 name : "Inês Presa",
                 role : "Comunicação"
             },
             {
-                imageSrc : "img/avatar_Ana_Silva.jpg",
+                imageSrc : "img/avatar_Ana_Silva.webp",
                 name : "Ana Silva",
                 role : "Comunicação"
             },
             {
-                imageSrc : "img/avatar_Beatriz_Oliveira.jpg",
+                imageSrc : "img/avatar_Beatriz_Oliveira.webp",
                 name : "Beatriz Oliveira",
                 role : "Comunicação"
             },

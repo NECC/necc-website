@@ -6,10 +6,11 @@
   "scripts": {
     "watch:css": "onchange './src/index.html' -- npm run build:css && npm run build:html",
     "build:html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
-    "build:img": "imagemin --out-dir=dist/img src/img/**/*.{png,jpg,gif}",
+    "build:img": "imagemin --plugin.webp.quality=95 --out-dir=dist/img src/img/**/*.{png,jpg,gif}",
     "build:css": "postcss ./src/css/tailwind.css -o ./dist/css/tailwind.min.css",
     "build:js": "minify ./src/js/card.js > ./dist/js/card.min.js && minify ./src/js/main.js > ./dist/js/main.min.js",
-    "build": "npm run build:css && npm run build:js && npm run build:html"
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "resize:avatares": "node ./resize.js"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,11 @@
     "cssnano": "^4.1.10",
     "html-minifier": "^4.0.0",
     "imagemin-cli": "^6.0.0",
+    "imagemin-webp": "^6.0.0",
     "minify": "^6.0.1",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
+    "resize-img-cli": "^1.0.0",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
