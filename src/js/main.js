@@ -9,6 +9,7 @@ function ready() {
         document.querySelector('html').classList.add('dark');
         
         let elem = document.getElementById('darkmode');
+        elem.setAttribute("aria-checked", "true");
         elem.firstElementChild.classList.add("icon-sunny-outline");
         elem.firstElementChild.classList.remove("icon-moon-outline");
     } else {
@@ -23,10 +24,12 @@ function navbarToggle() {
 function toggleDarkMode(elem) {
     if (document.querySelector('html').classList.toggle('dark')) {
         localStorage.theme = 'dark';
+        elem.setAttribute("aria-checked", "true");
         elem.firstElementChild.classList.add("icon-sunny-outline");
         elem.firstElementChild.classList.remove("icon-moon-outline");
     } else {
         localStorage.theme = 'light';
+        elem.setAttribute("aria-checked", "false");
         elem.firstElementChild.classList.add("icon-moon-outline");
         elem.firstElementChild.classList.remove("icon-sunny-outline");
     }
