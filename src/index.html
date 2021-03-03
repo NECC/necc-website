@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -25,7 +25,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="./css/tailwind.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -47,7 +47,7 @@
                     class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-gray-500 hover:border-gray-900">
                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                     </svg>
                 </button>
             </div>
@@ -82,7 +82,8 @@
         <section id="home"
             class="min-h-screen flex flex-col items-center justify-center transition-colors duration-500 ease-in-out bg-fixed bg-center bg-cover bg-no-repeat"
             style="background-image:linear-gradient(#3B82F6,rgba(59,130,246,0.5)), url(./img/splash-screen.webp)">
-            <h1 class="text-white font-semibold text-9xl mb-4" style="font-family: 'Allerta Stencil', sans-serif;">NECC</h1>
+            <h1 class="text-white font-semibold text-9xl mb-4" style="font-family: 'Allerta Stencil', sans-serif;">NECC
+            </h1>
             <p class="text-white font-semibold uppercase text-xl">núcleo de estudantes de ciências da computação</p>
         </section>
 
@@ -93,12 +94,16 @@
                         class="font-semibold leading-tight text-2xl text-gray-900 dark:text-white border-b-4 border-blue-400">
                         O que é o NECC?</h2>
                 </header>
-                <p class="lg:w-6/12 text-justify text-gray-800 dark:text-gray-100">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
+                <p class="lg:w-6/12 text-justify text-gray-800 dark:text-gray-100 leading-relaxed">A Licenciatura em
+                    Ciências da
+                    Computação(anteriormente LMCC) é uma parceria do Departamento de Matemática (da Escola de Ciências)
+                    e do Departamento de Informática (da Escola de Engenharia) e caracteriza-se por uma visão rigorosa
+                    da computação, com uma sólida fundamentação matemática. O NECC é uma associação de estudantes,
+                    voluntários, foi criada em 2001(anteriormente GEMCC) com o intuito de
+                    ajudar e representar todos os alunos do curso de Licenciatura de Ciências da Computação da
+                    Universidade do Minho. Ao longo de vários anos, aconselhamos os alunos de todos os anos, seja
+                    na apresentação no primeiro ano, realização de workshops e contactos com empresas a alunos
+                    finalistas.</p>
             </article>
         </section>
 
@@ -142,7 +147,7 @@
                         Os nossos parceiros</h2>
                 </header>
                 <div class="flex flex-row flex-wrap justify-evenly">
-                    <card-sponsor v-for="n in 4" v-bind:link="cardSponsor[0].imageSrc"
+                    <card-sponsor v-for="n in 1" v-bind:link="cardSponsor[0].imageSrc"
                         v-bind:brand="cardSponsor[0].brand" v-bind:description="cardSponsor[0].description"
                         v-bind:address="cardSponsor[0].address">
                     </card-sponsor>
@@ -165,17 +170,20 @@
                         <h2 class="text-xl text-white dark:text-blue-200 font-semibold mb-4">Segue-nos</h2>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://www.instagram.com/necc.uminho/">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
+                            href="https://www.instagram.com/necc.uminho/">
                             <span class="icon-logo-instagram text-4xl mr-2"></span>Instagram
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://bit.ly/discordLCC">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
+                            href="https://bit.ly/discordLCC">
                             <span class="icon-logo-discord text-4xl mr-2"></span>Discord
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank" href="https://github.com/NECC">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
+                            href="https://github.com/NECC">
                             <span class="icon-logo-github text-4xl mr-2"></span>Github
                         </a>
                     </li>
@@ -185,7 +193,8 @@
                         <h2 class="text-xl text-white dark:text-blue-200 font-semibold mb-4">Encontra-nos</h2>
                     </li>
                     <li class="mb-3">
-                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center" href="mailto:necc@di.uminho.pt">
+                        <a class="text-base text-gray-100 dark:text-gray-300 flex items-center"
+                            href="mailto:necc@di.uminho.pt">
                             <span class="icon-mail-outline text-4xl mr-2"></span>necc@di.uminho.pt
                         </a>
                     </li>
@@ -198,7 +207,7 @@
             </div>
 
             <p class="text-xl text-bold text-blue-300 font-mono text-center w-full py-7">
-                <span class="font-sans">&copy;</span> NECC 2020 | Developed by David Machado
+                <span class="font-sans">&copy;</span> NECC 2001-2021 | Developed by David Machado
             </p>
         </div>
     </footer>

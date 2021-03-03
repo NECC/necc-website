@@ -36,15 +36,15 @@ Vue.component('card-sponsor', {
     `
 });
 
-var app = new Vue({
+let app = new Vue({
     el: '#app',
     data: {
         cardSponsor: [
             {
-                imageSrc : "https://i.pinimg.com/originals/fd/d6/04/fdd6047d9c360bd20fd44cf5897ff84b.jpg",
-                brand : "Coke",
-                description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                address : "Rua Nova de Santa Cruz Nº99"
+                imageSrc : "https://image.freepik.com/free-vector/coming-soon-with-megaphone-design_1017-26689.jpg",
+                brand : "Coming Soon",
+                description : "",
+                address : ""
             },
         ],
         cardMembers: [
