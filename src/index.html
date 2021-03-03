@@ -29,6 +29,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <!-- Styles -->
+    <link rel="preload" href="./css/tailwind.min.css" as="style">
+    <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="stylesheet" href="./css/tailwind.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <!-- Scripts -->
@@ -158,7 +160,7 @@
 
         <button id="darkmode"
             class="fixed right-4 bottom-16 z-10 h-14 w-14 rounded-full bg-gray-900 dark:bg-gray-100 flex items-center justify-center focus:outline-none focus:ring-2 transition-colors duration-500 ease-in-out"
-            onclick="toggleDarkMode(this)" role="switch" aria-checked="false">
+            onclick="toggleDarkMode(this)" role="switch" aria-checked="false" aria-label="darkmode switch">
             <span class="icon-moon-outline text-4xl text-gray-200 dark:text-blue-500"></span>
         </button>
     </main>
