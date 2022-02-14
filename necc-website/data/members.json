@@ -1,0 +1,109 @@
+{
+    "members" : [
+        {
+            "image" : "Francisco_Teofilo.jpg",
+            "name" : "Francisco Teófilo",
+            "role" : "Secretário"
+        },
+        {
+            "image" : "Pedro_Gomes.jpg",
+            "name" : "Pedro Gomes",
+            "role" : "Tesoureiro"
+        },
+        {
+            "image" : "Joel_Pinto.jpg",
+            "name" : "Joel Pinto",
+            "role" : "Presidente"
+        },
+        {
+            "image" : "Margarida_Araujo.jpg",
+            "name" : "Margarida Araújo",
+            "role" : "Vice-Presidente"
+        },
+        {
+            "image" : "Henrique_Faria.jpg",
+            "name" : "Henrique Faria",
+            "role" : "Vogal"
+        },
+        {
+            "image" : "David_Machado.jpg",
+            "name" : "David Machado",
+            "role" : "D. Pedagógico"
+        },
+        {
+            "image" : "Bruno_Machado.jpg",
+            "name" : "Bruno Machado",
+            "role" : "Pedagógico"
+        },
+        {
+            "image" : "Tomas_Campinho.jpg",
+            "name" : "Tomás Campinho",
+            "role" : "Pedagógico"
+        },
+        {
+            "image" : "Miguel_Freitas.jpg",
+            "name" : "Miguel Freitas",
+            "role" : "D. Dev."
+        },
+        {
+            "image" : "Joao_Guedes.jpg",
+            "name" : "João Guedes",
+            "role" : "Dev."
+        },
+        {
+            "image" : "Rui_Torres.jpg",
+            "name" : "Rui Torres",
+            "role" : "D. Recreativo"
+        },
+        {
+            "image" : "Tiago_Carrico.jpg",
+            "name" : "Tiago Carriço",
+            "role" : "Recreativo"
+        },
+        {
+            "image" : "Goncalo_Braga.jpg",
+            "name" : "Gonçalo Braga",
+            "role" : "Recreativo"
+        },
+        {
+            "image" : "Afonso_Aarao.jpg",
+            "name" : "Afonso Aarão",
+            "role" : "D. Design"
+        },
+        {
+            "image" : "Joao_Freitas.jpg",
+            "name" : "João Freitas",
+            "role" : "Design"
+        },
+        {
+            "image" : "Ines_Martins.jpg",
+            "name" : "Inês Martins",
+            "role" : "Design"
+        },
+        {
+            "image" : "Diogo_Rodrigues.jpg",
+            "name" : "Diogo Rodrigues",
+            "role" : "Design"
+        },
+        {
+            "image" : "Pedro_Fernandes.jpg",
+            "name" : "Pedro Fernandes",
+            "role" : "D. Comunicação"
+        },
+        {
+            "image" : "Ines_Presa.jpg",
+            "name" : "Inês Presa",
+            "role" : "Comunicação"
+        },
+        {
+            "image" : "Ana_Silva.jpg",
+            "name" : "Ana Silva",
+            "role" : "Comunicação"
+        },
+        {
+            "image" : "Beatriz_Oliveira.jpg",
+            "name" : "Beatriz Oliveira",
+            "role" : "Comunicação"
+        }
+    ]
+}
