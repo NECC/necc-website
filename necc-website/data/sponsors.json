@@ -1,13 +1,7 @@
 {
     "sponsors" : [
         {
-            "imageSrc" : "https://image.freepik.com/free-vector/coming-soon-with-megaphone-design_1017-26689.jpg",
-            "brand" : "Coming Soon",
-            "description" : "",
-            "address" : ""
-        },
-        {
-            "imageSrc" : "https://image.freepik.com/free-vector/coming-soon-with-megaphone-design_1017-26689.jpg",
+            "path" : "/sponsors/comingSoon.jpg",
             "brand" : "Coming Soon",
             "description" : "",
             "address" : ""

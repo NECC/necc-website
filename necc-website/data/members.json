@@ -1,109 +1,89 @@
 {
     "members" : [
         {
-            "image" : "Francisco_Teofilo.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "David Machado",
+            "role" : "Presidente"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "Francisco Teófilo",
+            "role" : "Vice-Presidente"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Joel Pinto",
             "role" : "Secretário"
         },
         {
-            "image" : "Pedro_Gomes.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "Pedro Gomes",
             "role" : "Tesoureiro"
         },
         {
-            "image" : "Joel_Pinto.jpg",
-            "name" : "Joel Pinto",
-            "role" : "Presidente"
-        },
-        {
-            "image" : "Margarida_Araujo.jpg",
-            "name" : "Margarida Araújo",
-            "role" : "Vice-Presidente"
-        },
-        {
-            "image" : "Henrique_Faria.jpg",
-            "name" : "Henrique Faria",
-            "role" : "Vogal"
-        },
-        {
-            "image" : "David_Machado.jpg",
-            "name" : "David Machado",
-            "role" : "D. Pedagógico"
-        },
-        {
-            "image" : "Bruno_Machado.jpg",
-            "name" : "Bruno Machado",
-            "role" : "Pedagógico"
-        },
-        {
-            "image" : "Tomas_Campinho.jpg",
-            "name" : "Tomás Campinho",
-            "role" : "Pedagógico"
-        },
-        {
-            "image" : "Miguel_Freitas.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "Miguel Freitas",
             "role" : "D. Dev."
         },
         {
-            "image" : "Joao_Guedes.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Tiago Carriço",
+            "role" : "Dev"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "João Guedes",
             "role" : "Dev."
         },
         {
-            "image" : "Rui_Torres.jpg",
-            "name" : "Rui Torres",
-            "role" : "D. Recreativo"
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" :  "Simão Quintela",
+            "role" : "Dev"
         },
         {
-            "image" : "Tiago_Carrico.jpg",
-            "name" : "Tiago Carriço",
-            "role" : "Recreativo"
-        },
-        {
-            "image" : "Goncalo_Braga.jpg",
-            "name" : "Gonçalo Braga",
-            "role" : "Recreativo"
-        },
-        {
-            "image" : "Afonso_Aarao.jpg",
-            "name" : "Afonso Aarão",
-            "role" : "D. Design"
-        },
-        {
-            "image" : "Joao_Freitas.jpg",
-            "name" : "João Freitas",
-            "role" : "Design"
-        },
-        {
-            "image" : "Ines_Martins.jpg",
-            "name" : "Inês Martins",
-            "role" : "Design"
-        },
-        {
-            "image" : "Diogo_Rodrigues.jpg",
-            "name" : "Diogo Rodrigues",
-            "role" : "Design"
-        },
-        {
-            "image" : "Pedro_Fernandes.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "Pedro Fernandes",
             "role" : "D. Comunicação"
         },
         {
-            "image" : "Ines_Presa.jpg",
+            "image" : "/avatar/avatar_David_Machado.jpg",
             "name" : "Inês Presa",
             "role" : "Comunicação"
         },
         {
-            "image" : "Ana_Silva.jpg",
-            "name" : "Ana Silva",
-            "role" : "Comunicação"
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Tomás Campinho",
+            "role" : "Pedagógico"
         },
         {
-            "image" : "Beatriz_Oliveira.jpg",
-            "name" : "Beatriz Oliveira",
-            "role" : "Comunicação"
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Bruno Machado",
+            "role" : "Pedagógico"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Rui Torres",
+            "role" : "D. Recreativo"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Gonçalo Braga",
+            "role" : "Recreativo"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Margarida Araújo",
+            "role" : "Recreativo"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "João Freitas",
+            "role" : "Design"
+        },
+        {
+            "image" : "/avatar/avatar_David_Machado.jpg",
+            "name" : "Diogo Rodrigues",
+            "role" : "Design"
         }
     ]
 }

@@ -3,7 +3,10 @@ import Head from 'next/head'
 import TeamGrid from '../components/TeamGrid'
 import Navbar from '../components/Navbar'
 import DarkModeButton from '../components/DarkModeButton'
+import SponsorCard from '../components/SponsorCard'
+import {sponsors} from '../data/sponsors.json'
 
+// importar style e woff para implementar os icons
 function ready() {
   if (localStorage.theme === 'dark') {
       document?.querySelector('html')?.classList.add('dark');
@@ -84,7 +87,10 @@ export default function Home() {
                         Os nossos parceiros</h2>
                 </header>
                 <div className="flex flex-row flex-wrap justify-evenly">
-                    {/** SponsorCard */}
+                    { sponsors.map((sponsor, i) =>{
+                        return(<SponsorCard key={i} {...sponsor}/>);
+                      })
+                    }
                 </div>
             </article>
         </section>
