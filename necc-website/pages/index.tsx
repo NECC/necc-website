@@ -6,7 +6,11 @@ import DarkModeButton from '../components/DarkModeButton'
 import SponsorCard from '../components/SponsorCard'
 import {sponsors} from '../data/sponsors.json'
 
-// importar style e woff para implementar os icons
+import { FiMail } from 'react-icons/fi';
+import { GiPositionMarker } from 'react-icons/gi';
+import { BsInstagram, BsDiscord, BsGithub } from 'react-icons/bs';
+
+
 function ready() {
   if (localStorage.theme === 'dark') {
       document?.querySelector('html')?.classList.add('dark');
@@ -22,7 +26,6 @@ function ready() {
 
 export default function Home() {
   useEffect(() => {
-    // write your code here, it's like componentWillMount
     ready();
   }, [])
 
@@ -60,7 +63,7 @@ export default function Home() {
                     A Licenciatura em Ciências da Computação (anteriormente LMCC) é uma parceria do Departamento de
                     Matemática (da Escola de Ciências) e do Departamento de Informática (da Escola de Engenharia) e
                     caracteriza-se por uma visão rigorosa da computação, com uma sólida fundamentação matemática. O NECC
-                    é uma associação de estudantes, voluntários, foi criada em 2001 (anteriormente GEMCC) com o intuito
+                    é uma associação de estudantes, voluntários, foi criada a 30 de março de 2009 (anteriormente GEMCC) com o intuito
                     de ajudar e representar todos os alunos do curso de Licenciatura de Ciências da Computação da
                     Universidade do Minho. Ao longo de vários anos, aconselhamos os alunos de todos os anos, seja na
                     apresentação no primeiro ano, realização de workshops e contactos com empresas a alunos finalistas.
@@ -86,7 +89,7 @@ export default function Home() {
                         className="font-semibold leading-tight text-2xl text-gray-900 dark:text-white border-b-4 border-blue-400">
                         Os nossos parceiros</h2>
                 </header>
-                <div className="flex flex-row flex-wrap justify-evenly">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
                     { sponsors.map((sponsor, i) =>{
                         return(<SponsorCard key={i} {...sponsor}/>);
                       })
@@ -107,20 +110,21 @@ export default function Home() {
                     </li>
                     <li className="mb-3">
                         <a className="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
-                            href="https://www.instagram.com/necc.uminho/" rel="noopener">
-                            <span className="icon-logo-instagram text-4xl mr-2"></span>Instagram
+                            href="https://www.instagram.com/necc.uminho/" rel="noopener"
+                        >
+                            <BsInstagram className="text-3xl mr-2" />Instagram
                         </a>
                     </li>
                     <li className="mb-3">
                         <a className="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
                             href="http://bit.ly/LccDiscord" rel="noopener">
-                            <span className="icon-logo-discord text-4xl mr-2"></span>Discord
+                            <BsDiscord className="text-3xl mr-2" />Discord
                         </a>
                     </li>
                     <li className="mb-3">
                         <a className="text-base text-gray-100 dark:text-gray-300 flex items-center" target="_blank"
                             href="https://github.com/NECC" rel="noopener">
-                            <span className="icon-logo-github text-4xl mr-2"></span>Github
+                            <BsGithub className="text-3xl mr-2" />Github
                         </a>
                     </li>
                 </ul>
@@ -131,12 +135,12 @@ export default function Home() {
                     <li className="mb-3">
                         <a className="text-base text-gray-100 dark:text-gray-300 flex items-center"
                             href="mailto:necc@di.uminho.pt">
-                            <span className="icon-mail-outline text-4xl mr-2"></span>necc@di.uminho.pt
+                            <FiMail className="text-3xl mr-2" />necc@di.uminho.pt
                         </a>
                     </li>
                     <li className="mb-3">
                         <p className="text-base text-gray-100 dark:text-gray-300 mb-2 flex items-center">
-                            <span className="icon-location-outline text-4xl mr-2"></span>DI sala 1.1
+                            <GiPositionMarker className="text-3xl mr-2" />DI sala 1.1
                         </p>
                     </li>
                 </ul>
