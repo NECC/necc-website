@@ -8,7 +8,7 @@ export default function DarkModeButton() {
         localStorage.theme = document.querySelector('html')
             .classList.toggle('dark') ? 'dark' : 'light';
 
-        setOn(!on)
+        setOn(localStorage.theme == 'dark')
     }
 
     return (
