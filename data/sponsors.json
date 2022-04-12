@@ -19,6 +19,23 @@
                 "Impressões a preto e branco 0.02€ e a cores 0.09€"
             ],
             "address" : "Rua Nova de Santa Cruz 16, 4710-416 Braga"
+        },
+        {
+            "path": "/sponsors/chocolateChampagne.jpg",
+            "brand": "Chocolate Champagne",
+            "description":[
+                "0.50€ de desconto em todos os menus de refeição."
+            ],
+            "address": "Rua Nova de Santa Cruz, 4710-416 Braga"
+        },
+        {
+            "path": "/sponsors/switch.jpg",
+            "brand": "Switch Technology",
+            "description":[
+                "2% de desconto em Equipamentos novos(online/loja).",
+                "20% na reparação de qualquer equipamento"
+            ],
+            "address": "Rua Cônego Manuel José Barbosa Correia nº 22, 4990-144 Ponte de Lima"
         }
     ]
 }
