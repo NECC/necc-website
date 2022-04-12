@@ -9,4 +9,8 @@
     .font-Allerta {
         font-family: 'Allerta Stencil', sans-serif;
     }
+
+    html{
+        scroll-behavior: smooth;
+    }
 }
