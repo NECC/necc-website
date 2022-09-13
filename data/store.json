@@ -1,0 +1,10 @@
+{
+    "store-items" : [
+        {
+            "name": "hoodie-necc",
+            "path" : "/store/hoodie.jpg",
+            "description" : "Best hoodie ever!",
+            "price": "10.99"
+        }
+    ]
+}
