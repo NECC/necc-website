@@ -1,10 +1,46 @@
 {
-    "store-items" : [
+    "storeItems" : [
         {
-            "name": "hoodie-necc",
+            "name": "hoodie-necc1",
             "path" : "/store/hoodie.jpg",
-            "description" : "Best hoodie ever!",
-            "price": "10.99"
+            "shortDescription": "Hoodie NECC 1",
+            "longDescription" : "Best hoodie ever! 1",
+            "price": "10.99€"
+        },
+        {
+            "name": "hoodie-necc2",
+            "path" : "/store/hoodie.jpg",
+            "shortDescription": "Hoodie NECC 2",
+            "longDescription" : "Best hoodie ever! 2",
+            "price": "10.99€"
+        },
+        {
+            "name": "hoodie-necc3",
+            "path" : "/store/hoodie.jpg",
+            "shortDescription": "Hoodie NECC 3",
+            "longDescription" : "Best hoodie ever! 3",
+            "price": "10.99€"
+        },
+        {
+            "name": "hoodie-necc4",
+            "path" : "/store/hoodie.jpg",
+            "shortDescription": "Hoodie NECC 4",
+            "longDescription" : "Best hoodie ever! 4",
+            "price": "10.99€"
+        },
+        {
+            "name": "hoodie-necc5",
+            "path" : "/store/hoodie.jpg",
+            "shortDescription": "Hoodie NECC 5",
+            "longDescription" : "Best hoodie ever! 5",
+            "price": "10.99€"
+        },
+        {
+            "name": "hoodie-necc6",
+            "path" : "/store/hoodie.jpg",
+            "shortDescription": "Hoodie NECC 6",
+            "longDescription" : "Best hoodie ever! 6",
+            "price": "10.99€"
         }
     ]
 }

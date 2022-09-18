@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {members} from '../data/members.json'
+import {members} from '../../data/members.json'
 
 function MobileCard({ path, name, role }) {
     return (

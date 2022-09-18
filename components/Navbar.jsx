@@ -38,7 +38,7 @@ export default function Navbar() {
                             className="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 rounded text-gray-500 hover:text-blue-600 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-blue-500 dark:hover:bg-gray-700 mr-4 transition-colors duration-500 ease-in-out">
                             Parceiros
                         </a>
-                        <a href="store"
+                        <a href="/store"
                             className="block mt-2 py-2 px-4 lg:inline-block lg:mt-0 rounded text-gray-500 hover:text-blue-600 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-blue-500 dark:hover:bg-gray-700 transition-colors duration-500 ease-in-out">
                             Loja
                         </a>
