@@ -1,46 +1,28 @@
 {
     "storeItems" : [
         {
-            "name": "hoodie-necc1",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 1",
+            "name": "Hoodie Necc 1",
+            "paths":["/store/small.png", "/store/back.png"],
+            "shortDescription": "T-Shirt de inverno ou verão",
             "longDescription" : "Best hoodie ever! 1",
-            "price": "10.99€"
+            "price": "10.99€",
+            "price_socio": "8.99€"
         },
         {
-            "name": "hoodie-necc2",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 2",
+            "name": "Hoodie Necc 2",
+            "paths":["/store/center.png", "/store/back.png"],
+            "shortDescription": "T-Shirt de inverno confortável",
             "longDescription" : "Best hoodie ever! 2",
-            "price": "10.99€"
+            "price": "10.99€",
+            "price_socio": "8.99€"
         },
         {
-            "name": "hoodie-necc3",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 3",
+            "name": "Hoodie Necc 3",
+            "paths":["/store/text.png", "/store/back.png"],
+            "shortDescription": "T-Shirt de verão confortável",
             "longDescription" : "Best hoodie ever! 3",
-            "price": "10.99€"
-        },
-        {
-            "name": "hoodie-necc4",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 4",
-            "longDescription" : "Best hoodie ever! 4",
-            "price": "10.99€"
-        },
-        {
-            "name": "hoodie-necc5",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 5",
-            "longDescription" : "Best hoodie ever! 5",
-            "price": "10.99€"
-        },
-        {
-            "name": "hoodie-necc6",
-            "path" : "/store/hoodie.jpg",
-            "shortDescription": "Hoodie NECC 6",
-            "longDescription" : "Best hoodie ever! 6",
-            "price": "10.99€"
+            "price": "10.99€",
+            "price_socio": "8.99€"
         }
     ]
 }

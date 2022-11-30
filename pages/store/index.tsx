@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Head from 'next/head'
 import StoreItem from '../../components/store/StoreItem'
@@ -23,6 +23,7 @@ export default function Store() {
     ready();
   }, [])
 
+
   return (
     <div>
         <Head>
@@ -36,21 +37,21 @@ export default function Store() {
             <link href={"https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"} rel="stylesheet" />
         </Head>
         
+        
         <Navbar />
-        <div className='bg-blue-50'>
-          <div id='store-page' className="grid xl:grid-cols-3 sm:grid-cols-2 gap-4 gap-x-0 py-24 ml-32 mr-32">
-            {
-                storeItems.map((item) => {
-                    const {name, path, shortDescription, price} = item
-                    return(
-                      <Link href={"store/"+name}>
-                        <a className='hover:scale-105'>
-                            <StoreItem path={path} shortDescription={shortDescription} price={price} />
-                        </a>
-                      </Link>
-                    );
-                })
-            }
+        
+        <div className='bg-blue-50 h-screen'>
+          <div id='store-page' className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-x-12 py-32 sm:ml-32 sm:mr-32">
+          {
+              storeItems.map((item) => {
+                  const {name, paths, shortDescription, price, price_socio} = item
+                  return(
+                    <a className='hover:bg-white hover:scale-105 hover:border hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md'>
+                      <StoreItem name={name} paths={paths}  shortDescription={shortDescription} price={price} price_socio={price_socio}/>
+                    </a>
+                  );
+              })
+          }
           </div>
         </div>
 
