@@ -46,7 +46,7 @@ export default function Store() {
               storeItems.map((item) => {
                   const {name, paths, shortDescription, price, price_socio} = item
                   return(
-                    <a className='hover:bg-white hover:scale-105 hover:border hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md'>
+                    <a className='w-auto hover:bg-white hover:scale-105 hover:border hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md'>
                       <StoreItem name={name} paths={paths}  shortDescription={shortDescription} price={price} price_socio={price_socio}/>
                     </a>
                   );
