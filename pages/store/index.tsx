@@ -3,27 +3,11 @@ import Navbar from '../../components/Navbar';
 import Head from 'next/head'
 import StoreItem from '../../components/store/StoreItem'
 import {storeItems} from '../../data/store.json'
-import Link from 'next/link';
+import DarkModeButton from '../../components/DarkModeButton';
 
-function ready() {
-  if (localStorage.theme === 'dark') {
-      document?.querySelector('html')?.classList.add('dark');
-      
-      let elem = document.getElementById('darkmode');
-      elem?.setAttribute("aria-checked", "true");
-      elem?.firstElementChild?.classList.add("icon-sunny-outline");
-      elem?.firstElementChild?.classList.remove("icon-moon-outline");
-  } else {
-      document?.querySelector('html')?.classList.remove('dark')
-  }
-}
 
 export default function Store() {
-  useEffect(() => {
-    ready();
-  }, [])
-
-
+  
   return (
     <div>
         <Head>
@@ -40,20 +24,19 @@ export default function Store() {
         
         <Navbar />
         
-        <div className='bg-blue-50 h-screen'>
-          <div id='store-page' className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-x-12 py-32 sm:ml-32 sm:mr-32">
+        <div className=' bg-slate-100 dark:bg-gray-800 min-h-screen'>
+          <div id='store-page' className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-x-12 py-32 sm:ml-32 sm:mr-32">
           {
               storeItems.map((item) => {
                   const {name, paths, shortDescription, price, price_socio} = item
                   return(
-                    <a className='w-auto hover:bg-white hover:scale-105 hover:border hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md'>
                       <StoreItem name={name} paths={paths}  shortDescription={shortDescription} price={price} price_socio={price_socio}/>
-                    </a>
                   );
               })
           }
           </div>
         </div>
+        <DarkModeButton />
 
     </div>
       

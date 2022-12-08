@@ -1,77 +1,67 @@
 import next from 'next';
 import Image from 'next/image'
+import path from 'path';
 import React, { useState } from 'react';
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
+function mod(n, m) {
+  return ((n % m) + m) % m;
+}
 
-function StoreItem({ name, paths, shortDescription, price, price_socio}) {
-    
-    /*
-    <span className='ease-in transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 bg-slate-400 rounded-lg inline-block'
-        onClick={ () => setPos( Math.abs((pos-1)%(paths.length))) }>
-    </span>
-    <span className='ease-in cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 bg-sky-700 rounded-lg inline-block' 
-        onClick={ () => setPos( Math.abs((pos)%(paths.length))) }>
-    </span>
-    <span className='ease-in transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 bg-slate-400 rounded-lg inline-block'
-        onClick={ () => setPos( Math.abs((pos + 1)%(paths.length))) }>
-    </span>
-    */
-
-    const [pos, setPos] = useState(0)
+function StoreItem({ name, paths, shortDescription, price, price_socio }) {
     const [showArrows, setShowArrows] = useState(false)
-    const [showLeftArrow, setShowLeftArrow] = useState(true)
-    const [showRightArrow, setShowRightArrow] = useState(true)
-
-    function handlePos(nextPos){
-        setPos(nextPos)
-        
-        if (nextPos == paths.length -1) {
-            setShowRightArrow(false)
-            setShowLeftArrow(true)
-        } else if(nextPos == 0) {
-            setShowRightArrow(true)
-            setShowLeftArrow(false)
-        } else {
-            setShowRightArrow(true)
-            setShowLeftArrow(true)
-        }
-    }
+    const [pos, setPos] = useState(0)
 
     return (
-        
-        <div 
+
+    
+        <div
             onMouseEnter={() => setShowArrows(true)}
             onMouseLeave={() => setShowArrows(false)}
-            className="relative max-w-full font-sans dark:bg-gray-600 flex hover:rounded-md justify-evenly items-center p-2"
-            >
-            <div className="border-gray-500">
-                <img src={paths[pos]} alt="um item" className='animate-fade hover:rounded-md h-72 sm:w-full sm:h-full object-coversm:h-72' />
-                <div className='absolute w-5/6 top-1/3 ml-2 mr-1'>
-                    <button onClick={() => handlePos(pos -1)} className={`${ (showArrows && showLeftArrow) ? "": "hidden"} absolute`}>&#10094;</button>
-                    <button onClick={() => handlePos(pos +1)} className={`${ (showArrows && showRightArrow) ? "": "hidden"} absolute left-full`}>&#10095;</button>
-                </div>
+            className="w-auto sm:w-auto p-2 flex justify-evenly items-center dark:hover:bg-gray-600  hover:bg-white hover:scale-105 hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md">
+            <div className="relative ">
+                <img src={paths[pos]} alt="um item" className=' duration-200 transition-all hover:rounded-md h-72 sm:w-full sm:h-full object-coversm:h-72' />
+                {
+                    showArrows &&
+                    <div className="absolute w-full flex justify-between top-[40%]">
+                        <div className={"cursor-pointer duration-200 w-8 h-8 bg-slate-300 rounded-3xl flex justify-center items-center"}
+                             onClick={() => setPos( mod((pos -1), (paths.length)) )}
+                        >
+                            <button className="h-4 w-4">
+                                <GrFormPrevious />
+                            </button>
+                        </div>
+                        <div className={"cursor-pointer duration-200 w-8 h-8 bg-slate-300 rounded-3xl flex justify-center items-center"}
+                             onClick={() => setPos( mod((pos +1), (paths.length)) )}
+                        >
+                            <button className="h-4 w-4">
+                                <GrFormNext />
+                            </button>
+                        </div>
+                    </div>
+                }
                 <div className='w-full'>
                     <div className='ml-auto mr-auto w-fit -mt-10'>
-                        <span className='ease-in transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 bg-slate-400 rounded-lg inline-block'
-                            onClick={ () => setPos( Math.abs((pos-1)%(paths.length))) }>
-                        </span>
-                        <span className='ease-in cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 bg-sky-700 rounded-lg inline-block' 
-                            onClick={ () => setPos( Math.abs((pos)%(paths.length))) }>
-                        </span>
-                        <span className='ease-in transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 bg-slate-400 rounded-lg inline-block'
-                            onClick={ () => setPos( Math.abs((pos + 1)%(paths.length))) }>
-                        </span>
+                        {
+                            paths.map((path, index) => { 
+                                return (
+                                    <span className={`${ (index == pos) ? "bg-sky-700 scale-125": "bg-slate-400"} duration-300 transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 hover:scale-125 rounded-md inline-block`}
+                                          onClick={ () => setPos(index) }>
+                                    </span>
+                                )
+                            })
+                        }
                     </div>
                 </div>
-                <div className={'mt-6 ml-1'}>
-                    <p className='tracking-tight text-blue-600 dark:text-blue-300'>{name}</p>
-                    <p className='text-gray-700'>{shortDescription}</p>
-                    <div className='text-gray-700 mt-2'>
+                <div className='mt-6 ml-1'>
+                    <p className='tracking-tight text-blue-600 dark:text-blue-400'>{name}</p>
+                    <p className='text-gray-700 dark:text-white'>{shortDescription}</p>
+                    <div className='text-gray-700 dark:text-white mt-2'>
                         <div className='flex'>
                             <p className='pt-1 mr-1'>Não Sócios</p>
                             <p className='font-bold pt-1'>{price}</p>
                         </div>
-                        <div className='flex text-blue-600'>
+                        <div className='flex text-blue-600 dark:text-blue-400'>
                             <p className='mr-1'>Sócios</p>
                             <p className='font-bold'>{price_socio}</p>
                         </div>
@@ -79,7 +69,7 @@ function StoreItem({ name, paths, shortDescription, price, price_socio}) {
                 </div>
             </div>
         </div>
-    
+
     );
 }
 

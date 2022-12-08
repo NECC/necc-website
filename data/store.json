@@ -10,7 +10,7 @@
         },
         {
             "name": "Hoodie Necc 2",
-            "paths":["/store/center.png", "/store/back.png"],
+            "paths":["/store/center.png", "/store/back.png", "/store/small.png"],
             "shortDescription": "T-Shirt de inverno confortável",
             "longDescription" : "Best hoodie ever! 2",
             "price": "10.99€",
