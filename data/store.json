@@ -1,0 +1,28 @@
+{
+    "storeItems" : [
+        {
+            "name": "Hoodie Necc 1",
+            "paths":["/store/small.png", "/store/back.png"],
+            "shortDescription": "T-Shirt de inverno ou verão",
+            "longDescription" : "Best hoodie ever! 1",
+            "price": "10.99€",
+            "price_socio": "8.99€"
+        },
+        {
+            "name": "Hoodie Necc 2",
+            "paths":["/store/center.png", "/store/back.png", "/store/small.png"],
+            "shortDescription": "T-Shirt de inverno confortável",
+            "longDescription" : "Best hoodie ever! 2",
+            "price": "10.99€",
+            "price_socio": "8.99€"
+        },
+        {
+            "name": "Hoodie Necc 3",
+            "paths":["/store/text.png", "/store/back.png"],
+            "shortDescription": "T-Shirt de verão confortável",
+            "longDescription" : "Best hoodie ever! 3",
+            "price": "10.99€",
+            "price_socio": "8.99€"
+        }
+    ]
+}

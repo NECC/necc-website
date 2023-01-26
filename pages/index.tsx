@@ -1,9 +1,9 @@
 import React, { useState, Component, useEffect } from 'react';
 import Head from 'next/head'
-import TeamGrid from '../components/TeamGrid'
+import TeamGrid from '../components/home/TeamGrid'
 import Navbar from '../components/Navbar'
 import DarkModeButton from '../components/DarkModeButton'
-import SponsorCard from '../components/SponsorCard'
+import SponsorCard from '../components/home/SponsorCard'
 import {sponsors} from '../data/sponsors.json'
 
 import { FiMail } from 'react-icons/fi';
