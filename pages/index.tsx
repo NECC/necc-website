@@ -147,7 +147,7 @@ export default function Home() {
             </div>
 
             <p className="text-xl text-bold text-blue-300 font-mono text-center w-full py-7">
-                <span className="font-sans">&copy;</span> NECC 2001-2021 | Developed with 💖
+                <span className="font-sans">&copy;</span> NECC 2001-2023 | Developed with 💖
             </p>
         </div>
       </footer>
