@@ -1,97 +1,97 @@
 {
     "members" : [
         {
-            "image" : "/avatar/David_Machado.jpg",
+            "image" : "/avatar/David_Machado.png",
             "name" : "David Machado",
             "role" : "Presidente"
         },
         {
-            "image" : "/avatar/Pedro_Fernandes.jpg",
+            "image" : "/avatar/Pedro_Fernandes.png",
             "name" : "Pedro Fernades",
             "role" : "Vice-Presidente"
         },
         {
-            "image" : "/avatar/Miguel_Freitas.jpg",
+            "image" : "/avatar/Miguel_Freitas.png",
             "name" : "Miguel Freitas",
             "role" : "Secretário"
         },
         {
-            "image" : "/avatar/Pedro_Gomes.jpg",
+            "image" : "/avatar/Pedro_Gomes.png",
             "name" : "Pedro Gomes",
             "role" : "Tesoureiro"
         },
         {
-            "image" : "/avatar/Simao_Quintela.jpg",
+            "image" : "/avatar/Simao_Quintela.png",
             "name" : "Simão Quintela",
             "role" : "D. Dev."
         },
         {
-            "image" : "/avatar/Davide_Santos.jpg",
+            "image" : "/avatar/Davide_Santos.png",
             "name" : "Davide Santos",
             "role" : "Dev."
         },
         {
-            "image" : "/avatar/Rui_Jordao.jpg",
+            "image" : "/avatar/Rui_Jordao.png",
             "name" : "Rui Jordão",
             "role" : "D. Comunicação e Imagem"
         },
         {
-            "image" : "/avatar/Carlos_Fernandes.jpg",
+            "image" : "/avatar/Carlos_Fernandes.png",
             "name" : "Carlos Fernandes",
             "role" : "Comunicação"
         },
         {
-            "image" : "/avatar/Tiago_Fernandes.jpg",
+            "image" : "/avatar/Tiago_Fernandes.png",
             "name" : "Tiago Fernandes",
             "role" : "Comunicação"
         },
         {
-            "image" : "/avatar/Diogo_Rodrigues.jpg",
+            "image" : "/avatar/Diogo_Rodrigues.png",
             "name" : "Diogo Mata",
             "role" : "Imagem"
         },
         {
-            "image" : "/avatar/Goncalo_Paiva.jpg",
+            "image" : "/avatar/Goncalo_Paiva.png",
             "name" : "Gonçalo Paiva",
             "role" : "Imagem"
         },
         {
-            "image" : "/avatar/Bernardo_Moniz.jpg",
+            "image" : "/avatar/Bernardo_Moniz.png",
             "name" : "Bernardo Moniz",
             "role" : "D. Pedagógico"
         },
         {
-            "image" : "/avatar/Bianca_Vilaverde.jpg",
+            "image" : "/avatar/Bianca_Vilaverde.png",
             "name" : "Bianca Vilaverde",
             "role" : "D. Recreativo"
         },
         {
-            "image" : "/avatar/Jose_Ferreira.jpg",
+            "image" : "/avatar/Jose_Ferreira.png",
             "name" : "José Ferreira",
             "role" : "Presidente do Conselho Fiscal"
         },
         {
-            "image" : "/avatar/Pedro_Martins.jpg",
+            "image" : "/avatar/Pedro_Martins.png",
             "name" : "Pedro Martins",
             "role" : "Vice-Pesidente do Conselho Fiscal"
         },
         {
-            "image" : "/avatar/Francisco_Teofilo.jpg",
+            "image" : "/avatar/Francisco_Teofilo.png",
             "name" : "Francisco Teófilo",
             "role" : "Secretário do Conselho Fiscal"
         },
         {
-            "image" : "/avatar/Bruno_Jardim.jpg",
+            "image" : "/avatar/Bruno_Jardim.png",
             "name" : "Bruno Jardim",
             "role" : "Presidente da Assembleia Geral"
         },
         {
-            "image" : "/avatar/Beatriz_Oliveira.jpg",
+            "image" : "/avatar/Beatriz_Oliveira.png",
             "name" : "Beatriz Oliveira",
             "role" : "Vice-Pesidente da Assembleia Geral"
         },
         {
-            "image" : "/avatar/Catarina_Quintas.jpg",
+            "image" : "/avatar/Catarina_Quintas.png",
             "name" : "Catarina Quintas",
             "role" : "Secretária da Assembleia Geral"
         }
