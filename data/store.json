@@ -1,11 +1,11 @@
 {
     "storeItems" : [
         {
-            "name": "Hoodie Necc 1",
+            "name": "T-Shirt NECC",
             "paths":["/store/tshirts/small.png", "/store/tshirts/back.png"],
-            "shortDescription": "T-Shirt de inverno ou verão",
-            "price": "10.99€",
-            "price_socio": "8.99€"
+            "shortDescription": "T-Shirt branca NECC",
+            "price": "7.50€",
+            "price_socio": "6.50€"
         },
         {
             "name": "Sticker Necc",
