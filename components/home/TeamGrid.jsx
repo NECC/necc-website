@@ -26,14 +26,16 @@ function MemberCard({ path, name, role }) {
 }
 
 export default function TeamGrid() {
+    const caminho = image.queryStringParameters.caminho || image;
+
     return (
         <>
             <div className="flex flex-row flex-wrap justify-evenly md:hidden">
                 { 
                     members.map((member) => {
-                            const {image, name, role} = member
+                            const {caminho, name, role} = member
                             return(
-                                <MobileCard path={image} name={name} role={role} />
+                                <MobileCard path={caminho} name={name} role={role} />
                             );
                     })
                 }
@@ -41,9 +43,9 @@ export default function TeamGrid() {
             <div className="hidden md:grid">
                 <div className="grid md:grid-cols-4 lg:grid-cols-5 md:grid-rows-2 lg:grid-rows-1">
                     {   members.map((member) => {
-                            const {image, name, role} = member
+                            const {caminho, name, role} = member
                             return(
-                                <MemberCard path={image} name={name} role={role} />
+                                <MemberCard path={caminho} name={name} role={role} />
                             );
                         })
                     }        
