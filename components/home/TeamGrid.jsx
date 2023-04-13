@@ -13,11 +13,21 @@ function MobileCard({ path, name, role }) {
     );
 }
 
+const myLoader = ({ src, width, quality }) => {
+    return `https://necc.di.uminho.pt/${src}?w=${width}&q=${quality || 75}`
+}
+
 function MemberCard({ path, name, role }) {
     return (
         <div className="bg-white dark:bg-gray-600 shadow-lg rounded-md p-5 flex flex-col justify-evenly items-center m-2">
             <div className="rounded-full border-2 border-gray-200 w-24 h-24">
-                <Image className="rounded-full" src={path} alt="" width={100} height={100} />
+                <Image className="rounded-full" 
+                loader={myLoader}
+                src={path} 
+                alt="" 
+                width={100} 
+                height={100} 
+                />
             </div>
             <h3 className="font-semibold text-gray-700 dark:text-gray-200">{ name }</h3>
             <span className="rounded-full bg-blue-50 dark:bg-blue-200 text-sm py-1 px-2 font-semibold text-blue-700 dark:text-blue-900">{ role }</span>

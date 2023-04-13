@@ -4,11 +4,16 @@ import { GiPositionMarker } from 'react-icons/gi';
 /* Problema, responsiveness em Image. 
    Como colocar isto responsive para telemóveis
 */
+const myLoader = ({ src, width, quality }) => {
+    return `https://necc.di.uminho.pt/${src}?w=${width}&q=${quality || 75}`
+}  
+
 function SponsorCard({ path, brand, description, address }) {
     return (
         <figure className="bg-white dark:bg-gray-600 shadow-xl rounded-xl p-0 overflow-hidden flex flex-row justify-start items-center relative sm:static group">
             <div className="h-72 sm:h-64">
                 <Image className="" 
+                    loader={myLoader}
                     src={path}
                     alt=""
                     width={300}

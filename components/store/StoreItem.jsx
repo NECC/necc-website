@@ -20,7 +20,7 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
             onMouseLeave={() => setShowArrows(false)}
             className="w-auto sm:w-auto p-2 flex justify-evenly items-center dark:hover:bg-gray-600  hover:bg-white hover:scale-105 hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md">
             <div className="relative">
-                <img src={paths[pos]} alt="um item" className=' duration-200 transition-all hover:rounded-md h-72 sm:w-full sm:h-full object-coversm:h-72' />
+                <img src={paths[pos]} alt="" className='duration-200 transition-all hover:rounded-md h-72 sm:w-full sm:h-full object-coversm:h-72' />
                 {
                     showArrows &&
                     <div className="absolute w-full flex justify-between top-[40%]">
