@@ -8,11 +8,9 @@ function SponsorCard({ path, brand, description, address }) {
     return (
         <figure className="bg-white dark:bg-gray-600 shadow-xl rounded-xl p-0 overflow-hidden flex flex-row justify-start items-center relative sm:static group">
             <div className="h-72 sm:h-64">
-                <Image className="" 
+                <img className="w-64 h-64" 
                     src={path}
                     alt=""
-                    width={300}
-                    height={300}
                 />
             </div>
             <figcaption className="px-4 py-2 h-full absolute bg-white dark:bg-gray-600 sm:static hidden group-hover:flex sm:flex flex-col justify-around sm:w-4/6">
