@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 export default function Navbar() {
     const [open, setOpen] = useState(false);
 
-    
     return (
         <nav className="bg-white dark:bg-gray-900 p-5 fixed w-full z-10 shadow">
             <div className="container mx-auto flex items-center justify-between flex-wrap">
