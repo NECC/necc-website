@@ -1,11 +1,9 @@
-import next from 'next';
 import Image from 'next/image'
-import path from 'path';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
 function mod(n, m) {
-  return ((n % m) + m) % m;
+    return ((n % m) + m) % m;
 }
 
 function StoreItem({ name, paths, shortDescription, price, price_socio }) {
@@ -13,8 +11,6 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
     const [pos, setPos] = useState(0)
 
     return (
-
-    
         <div
             onMouseEnter={() => setShowArrows(true)}
             onMouseLeave={() => setShowArrows(false)}
@@ -25,14 +21,14 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
                     showArrows &&
                     <div className="absolute w-full flex justify-between top-[40%]">
                         <div className={"cursor-pointer duration-200 w-8 h-8 bg-slate-300 rounded-3xl flex justify-center items-center"}
-                             onClick={() => setPos( mod((pos -1), (paths.length)) )}
+                            onClick={() => setPos(mod((pos - 1), (paths.length)))}
                         >
                             <button className="h-4 w-4">
                                 <GrFormPrevious />
                             </button>
                         </div>
                         <div className={"cursor-pointer duration-200 w-8 h-8 bg-slate-300 rounded-3xl flex justify-center items-center"}
-                             onClick={() => setPos( mod((pos +1), (paths.length)) )}
+                            onClick={() => setPos(mod((pos + 1), (paths.length)))}
                         >
                             <button className="h-4 w-4">
                                 <GrFormNext />
@@ -43,10 +39,13 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
                 <div className='w-full'>
                     <div className='ml-auto mr-auto w-fit -mt-10'>
                         {
-                            paths.map((path, index) => { 
+                            paths.map((path, index) => {
                                 return (
-                                    <span className={`${ (index == pos) ? "bg-sky-700 scale-125": "bg-slate-400"} duration-300 transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 hover:scale-125 rounded-md inline-block`}
-                                          onClick={ () => setPos(index) }>
+                                    <span
+                                        className={`${(index == pos) ? "bg-sky-700 scale-125" : "bg-slate-400"} duration-300 transition-all cursor-pointer h-2 w-2 mt-0 mb-0 ml-1 mr-1 hover:bg-sky-700 hover:scale-125 rounded-md inline-block`}
+                                        onClick={() => setPos(index)}
+                                        key={index}
+                                    >
                                     </span>
                                 )
                             })

@@ -3,7 +3,7 @@ import { BsMoonStars, BsSun } from 'react-icons/bs';
 import { ThemeContext } from './ThemeProvider';
 
 export default function DarkModeButton() {
-    const [{ theme }, toggle] = useContext(ThemeContext);
+    const [theme, toggle] = useContext(ThemeContext);
 
     return (
         <button id="darkmode"
