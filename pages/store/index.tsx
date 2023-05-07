@@ -1,44 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import Navbar from '../../components/Navbar';
-import Head from 'next/head'
 import StoreItem from '../../components/store/StoreItem'
-import {storeItems} from '../../data/store.json'
-import DarkModeButton from '../../components/DarkModeButton';
+import storeData from '../../data/store.json'
+import Layout from '../../components/Layout'
 
 
 export default function Store() {
-  
-  return (
-    <div>
-        <Head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="Núcleo de Estudantes de Ciências da Computação" />
-            <meta name="keywords" content="NECC, UMinho, Ciências da Computação" />
-            <title>NECC</title>
-            <link rel="icon" href="/favicon.ico" />
-            {/* FONTS */}
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link href={"https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"} rel="stylesheet" />
-        </Head>
-        
-        
-        <Navbar />
-        
-        <div className=' bg-slate-100 dark:bg-gray-800 min-h-screen'>
-          <div id='store-page' className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-x-12 py-32 sm:ml-32 sm:mr-32">
-          {
-              storeItems.map((item) => {
-                  const {name, paths, shortDescription, price, price_socio} = item
-                  return(
-                      <StoreItem name={name} paths={paths}  shortDescription={shortDescription} price={price} price_socio={price_socio}/>
-                  );
-              })
-          }
-          </div>
-        </div>
-        <DarkModeButton />
+  const storeItems = storeData.storeItems;
 
-    </div>
-      
+  return (
+    <Layout>
+      <div className='bg-slate-100 dark:bg-gray-800 min-h-screen'>
+        <div id='store-page' className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gap-x-12 py-32 sm:ml-32 sm:mr-32">
+          {
+            storeItems.map(({ name, paths, shortDescription, price, price_socio }, index) => {
+              return (
+                <StoreItem name={name} paths={paths} shortDescription={shortDescription} price={price} price_socio={price_socio} key={index} />
+              );
+            })
+          }
+        </div>
+      </div>
+    </Layout>
   )
 }

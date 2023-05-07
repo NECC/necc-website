@@ -4,13 +4,10 @@
 
 @layer utilities {
     .bg-necc {
-        background-image:linear-gradient(#3B82F6,rgba(59,130,246,0.5)), url(/splash-screen.webp);
-    }
-    .font-Allerta {
-        font-family: 'Allerta Stencil', sans-serif;
+        background-image: linear-gradient(#3B82F6, rgba(59, 130, 246, 0.5)), url(/splash-screen.webp);
     }
 
-    html{
-        scroll-behavior: smooth;
+    .font-Allerta {
+        font-family: 'Allerta Stencil', sans-serif;
     }
 }
