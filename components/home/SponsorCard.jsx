@@ -7,11 +7,8 @@ import { GiPositionMarker } from 'react-icons/gi';
 function SponsorCard({ path, brand, description, address }) {
     return (
         <figure className="bg-white dark:bg-gray-600 shadow-xl rounded-xl p-0 overflow-hidden flex flex-row justify-start items-center relative sm:static group">
-            <div className="h-72 sm:h-64">
-                <img className="w-64 h-64"
-                    src={path}
-                    alt=""
-                />
+            <div className="">
+                <Image src={path} width={256} height={256} alt={brand + " logo"} className="w-72 h-72" />
             </div>
             <figcaption className="px-4 py-2 h-full absolute bg-white dark:bg-gray-600 sm:static hidden group-hover:flex sm:flex flex-col justify-around sm:w-4/6">
                 <h3 className="font-semibold text-xl text-gray-800 dark:text-gray-200 mb-1">{brand}</h3>
