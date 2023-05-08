@@ -6,8 +6,10 @@ import { GiPositionMarker } from 'react-icons/gi';
 */
 
 const imageLoader = ({ src, width, quality }) => {
-    // /_next/image?url=/sponsors/sponsor.jpg&w=640&q=75
-    return `/_next/image?url=${src}&w=${width}&q=${quality || 75}`;
+    if (process.env.NODE_ENV === "development")
+        return `/_next/image?url=${src}&w=${width}&q=${quality || 75}`;
+    else
+        return `/_ipx/w_${width},q_${quality || 75}/${src}?url=${src}&w=${width}&q=${quality || 75}`;
 };
 
 function SponsorCard({ path, brand, description, address }) {
