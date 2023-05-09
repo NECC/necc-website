@@ -24,7 +24,7 @@ export default function Home() {
                 O que é o NECC?
               </h2>
             </header>
-            <p className="lg:w-6/12 text-justify text-gray-800 dark:text-gray-100 leading-relaxed">
+            <p className="lg:w-8/12 text-justify text-gray-800 dark:text-gray-100 leading-relaxed">
               A Licenciatura em Ciências da Computação (anteriormente LMCC) é uma parceria do Departamento de
               Matemática (da Escola de Ciências) e do Departamento de Informática (da Escola de Engenharia) e
               caracteriza-se por uma visão rigorosa da computação, com uma sólida fundamentação matemática. O NECC
