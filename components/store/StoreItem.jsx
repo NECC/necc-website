@@ -1,6 +1,7 @@
-import Image from 'next/image'
-import { useState } from 'react';
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import LoadedImage from '../LoadedImage'
+import Image from "next/image"
+import { useState } from "react";
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
 function mod(n, m) {
     return ((n % m) + m) % m;
@@ -16,7 +17,7 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
             onMouseLeave={() => setShowArrows(false)}
             className="w-auto sm:w-auto p-2 flex justify-evenly items-center dark:hover:bg-gray-600  hover:bg-white hover:scale-105 hover:shadow-[0_05px_30px_-10px_rgba(0,0,0,0.5)] rounded-md">
             <div className="relative">
-                <img src={paths[pos]} alt="um item" className=' duration-200 transition-all hover:rounded-md h-72 sm:w-full sm:h-full object-coversm:h-72' />
+                <LoadedImage width={280} height={280} src={paths[pos]} alt={name} className="duration-200 transition-all hover:rounded-md h-72 w-72" />
                 {
                     showArrows &&
                     <div className="absolute w-full flex justify-between top-[40%]">
@@ -36,8 +37,8 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
                         </div>
                     </div>
                 }
-                <div className='w-full'>
-                    <div className='ml-auto mr-auto w-fit -mt-10'>
+                <div className="w-full">
+                    <div className="ml-auto mr-auto w-fit -mt-10">
                         {
                             paths.map((path, index) => {
                                 return (
@@ -52,17 +53,17 @@ function StoreItem({ name, paths, shortDescription, price, price_socio }) {
                         }
                     </div>
                 </div>
-                <div className='mt-6 ml-1'>
-                    <p className='tracking-tight text-blue-600 dark:text-blue-400'>{name}</p>
-                    <p className='text-gray-700 dark:text-white'>{shortDescription}</p>
-                    <div className='text-gray-700 dark:text-white mt-2'>
-                        <div className='flex'>
-                            <p className='pt-1 mr-1'>Não Sócios</p>
-                            <p className='font-bold pt-1'>{price}</p>
+                <div className="mt-6 ml-1">
+                    <p className="tracking-tight text-blue-600 dark:text-blue-400">{name}</p>
+                    <p className="text-gray-700 dark:text-white">{shortDescription}</p>
+                    <div className="text-gray-700 dark:text-white mt-2">
+                        <div className="flex">
+                            <p className="pt-1 mr-1">Não Sócios</p>
+                            <p className="font-bold pt-1">{price}</p>
                         </div>
-                        <div className='flex text-blue-600 dark:text-blue-400'>
-                            <p className='mr-1'>Sócios</p>
-                            <p className='font-bold'>{price_socio}</p>
+                        <div className="flex text-blue-600 dark:text-blue-400">
+                            <p className="mr-1">Sócios</p>
+                            <p className="font-bold">{price_socio}</p>
                         </div>
                     </div>
                 </div>
