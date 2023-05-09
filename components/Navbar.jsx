@@ -30,7 +30,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className={`w-full ${open ? "" : "hidden"} lg:flex lg:items-center lg:w-auto`}>
-                    <ul className="font-semibold text-base flex">
+                    <ul className="font-semibold text-base lg:flex">
                         {
                             Object.entries(routes).map(([name, route], index) =>
                                 <li key={index}>
