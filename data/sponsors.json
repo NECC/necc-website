@@ -1,41 +1,52 @@
 {
-    "sponsors" : [
-        {
-            "path" : "/sponsors/disquete.png",
-            "brand" : "Disquete",
-            "description" : [
-                "Desconto de 20% em reparações informáticas",
-                "Desconto de 10% na compra de consumíveis (tinteiros e toners)",
-                "Impressões a preto e branco 0.02€ e a cores 0.09€"
-            ],
-            "address" : "Rua do Vilar | Ed. Olympus - Lojas 10/12, 4710-409 Braga"
-        },
-        {
-            "path" : "/sponsors/copyscan.jpg",
-            "brand" : "CopyScan",
-            "description" : [
-                "20% em material escolar",
-                "Encadernação de 1.50€ a 2€",
-                "Impressões a preto e branco 0.02€ e a cores 0.09€"
-            ],
-            "address" : "Rua Nova de Santa Cruz 16, 4710-416 Braga"
-        },
-        {
-            "path": "/sponsors/chocolateChampagne.jpg",
-            "brand": "Chocolate Champagne",
-            "description":[
-                "0.50€ de desconto em todos os menus de refeição."
-            ],
-            "address": "Rua Nova de Santa Cruz, 4710-416 Braga"
-        },
-        {
-            "path": "/sponsors/switch.jpg",
-            "brand": "Switch Technology",
-            "description":[
-                "2% de desconto em Equipamentos novos(online/loja).",
-                "20% na reparação de qualquer equipamento"
-            ],
-            "address": "Rua Cônego Manuel José Barbosa Correia nº 22, 4990-144 Ponte de Lima"
-        }
-    ]
+  "sponsors": [
+    {
+      "path": "/sponsors/copyscan.jpg",
+      "brand": "CopyScan",
+      "description": [
+        "10% de desconto em material escolar",
+        "Encadernação de 1.50€ a 4.50€",
+        "Impressões a preto e branco 0.03€ e a cores 0.12€"
+      ],
+      "address": "Rua Nova de Santa Cruz 16, 4710-416 Braga"
+    },
+    {
+      "path": "/sponsors/chip7.jpeg",
+      "brand": "Chip7",
+      "description": [
+        "25% de desconto em todos os serviços técnicos prestados,  com  exceção  dos  serviços  externo  em  Outsourcing"
+      ],
+      "address": "R. Nova de Santa Cruz 21, 4710-409 Braga"
+    },
+    {
+      "path": "/sponsors/deltabarbershop.png",
+      "brand": "Delta Barbershop",
+      "description": ["Corte grátis após o 10° corte"],
+      "address": "R. Nova de Santa Cruz, 4710-572 Braga"
+    },
+    {
+      "path": "/sponsors/mixpao.png",
+      "brand": "Mixpão",
+      "description": [
+        "Cartão de fidelização com 2€ de desconto à 10ª utilização"
+      ],
+      "address": "Rua Urbanização Quinta Dos Orfeãos BL A-2, Loja 10, 4710-416  Braga"
+    },
+    {
+      "path": "/sponsors/osfarias.jpeg",
+      "brand": "Os Farias",
+      "description": [
+        "3 emblemas adicionais na compra do traje",
+        "5º emblema ou pin na compra de 4 emblemas ou pins",
+        "0.25€ de desconto em meias"
+      ],
+      "address": "Rua Nova de Santa Cruz nº 88, 4710-409, São Vítor, Braga"
+    },
+    {
+      "path": "/sponsors/sabordafruta.jpg",
+      "brand": "Sabor da Fruta",
+      "description": ["Oferta de um café ou sopa no menu estudante"],
+      "address": "Rua Nova de Santa Cruz nº3, 4710-416,São Vítor, Braga"
+    }
+  ]
 }
