@@ -11,8 +11,8 @@
             "name": "Sticker Necc",
             "paths":["/store/stickers/sticker_necc.png", "/store/stickers/sticker_recursivo.png"],
             "shortDescription": "Sticker Necc Normal/Recursivo",
-            "price": "1.50€",
-            "price_socio": "1.00€"
+            "price": "1.00€",
+            "price_socio": "0.50€"
         }
     ]
 }
