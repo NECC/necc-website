@@ -8,11 +8,18 @@
             "price_socio": "6.50€"
         },
         {
-            "name": "Sticker Necc",
+            "name": "Sticker NECC",
             "paths":["/store/stickers/sticker_necc.png", "/store/stickers/sticker_recursivo.png"],
-            "shortDescription": "Sticker Necc Normal/Recursivo",
-            "price": "1.50€",
-            "price_socio": "1.00€"
+            "shortDescription": "Sticker NECC Normal/Recursivo",
+            "price": "1.00€",
+            "price_socio": "0.50€"
+        },
+        {
+            "name": "Hoodie NECC",
+            "paths":["/store/hoodie/hoodie.jpeg", "/store/hoodie/hoodie_back.jpeg"],
+            "shortDescription": "Hoodie preta NECC",
+            "price": "30€",
+            "price_socio": "26€"
         }
     ]
 }
