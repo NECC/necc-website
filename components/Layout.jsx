@@ -70,14 +70,14 @@ const Layout = ({ children }) => {
                             </li>
                             <li className="mb-3">
                                 <p className="text-base text-gray-100 dark:text-gray-300 mb-2 flex items-center">
-                                    <GiPositionMarker className="text-3xl mr-2" />DI sala 1.1
+                                    <GiPositionMarker className="text-3xl mr-2" />DI sala 1.03
                                 </p>
                             </li>
                         </ul>
                     </div>
 
                     <p className="text-xl text-bold text-blue-300 font-mono text-center w-full py-7">
-                        <span className="font-sans">&copy;</span> NECC 2001-2023 | Developed with 💖
+                        <span className="font-sans">&copy;</span> NECC 2001-2025 | Developed with 💖
                     </p>
                 </div>
             </footer>
