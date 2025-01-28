@@ -18,8 +18,22 @@
             "name": "Hoodie NECC",
             "paths":["/store/hoodie/hoodie.jpeg", "/store/hoodie/hoodie_back.jpeg"],
             "shortDescription": "Hoodie preta NECC",
+            "price": "28€",
+            "price_socio": "25€"
+        },
+        {
+            "name": "Casaco NECC",
+            "paths":["/store/casaco/casaco.jpeg", "/store/casaco/casaco_back.jpeg"],
+            "shortDescription": "Casaco preto NECC",
             "price": "30€",
-            "price_socio": "26€"
+            "price_socio": "27€"
+        },
+        {
+            "name": " Pacote (Hoodie + Casaco)",
+            "paths":["/store/hoodie/hoodie.jpeg", "/store/hoodie/hoodie_back.jpeg","/store/casaco/casaco.jpeg", "/store/casaco/casaco_back.jpeg"],
+            "shortDescription": "Hoodie preta NECC + Casaco preto NECC",
+            "price": "53€",
+            "price_socio": "50€"
         }
     ]
 }
