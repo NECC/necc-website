@@ -1,22 +1,22 @@
 {
     "members": [
         {
-            "image": "/avatar/GoncaloSoares.png?v=2",
+            "image": "/avatar/GoncaloSoares.png",
             "name": "Gonçalo Soares",
             "role": "Presidente"
         },
         {
-            "image": "/avatar/GoncaloMonteiro.png?v=2",
+            "image": "/avatar/GoncaloMonteiro.png",
             "name": "Gonçalo Monteiro",
             "role": "Vice-Presidente"
         },
         {
-            "image": "/avatar/JoaoNeiva.png?v=2",
+            "image": "/avatar/JoaoNeiva.png",
             "name": "João Neiva",
             "role": "Tesoureiro"
         },
         {
-            "image": "/avatar/DavideSantos.png?v=2",
+            "image": "/avatar/DavideSantos.png",
             "name": "Davide Santos",
             "role": "Secretário"
         },
@@ -71,7 +71,7 @@
             "role": "Comunicação e Imagem"
         },
         {
-            "image": "/avatar/PedroGomes.png?v=2",
+            "image": "/avatar/PedroGomes.png",
             "name": "Pedro Gomes",
             "role": "D. Pedagógico"
         },
@@ -91,27 +91,27 @@
             "role": "D. Recreativo"
         },
         {
-            "image": "/avatar/GoncaloBarroso.png?v=2",
+            "image": "/avatar/GoncaloBarroso.png",
             "name": "Gonçalo Barroso",
             "role": "Recreativo"
         },
         {
-            "image": "/avatar/LuisSilva.png?v=2",
+            "image": "/avatar/LuisSilva.png",
             "name": "Luis Silva",
             "role": "Pres. do Conselho Fiscal"
         },
         {
-            "image": "/avatar/AfonsoMartins.png?v=2",
+            "image": "/avatar/AfonsoMartins.png",
             "name": "Afonso Martins",
             "role": "VP. do Conselho Fiscal"
         },
         {
-            "image": "/avatar/RicardoVilaca.png?v=2",
+            "image": "/avatar/RicardoVilaca.png",
             "name": "Ricardo Vilaça",
             "role": "Sec. do Conselho Fiscal"
         },
         {
-            "image": "/avatar/RenatoGarcia.png?v=2",
+            "image": "/avatar/RenatoGarcia.png",
             "name": "Renato Garcia",
             "role": "Pres. da Assembleia Geral"
         },
