@@ -51,6 +51,12 @@
       "brand": "Mikado - Braga & Famalicão",
       "description": ["Desconto de 10% em qualquer prato para todos os sócios"],
       "address": "R. Nova de Santa Cruz nº22 Gualtar, 4710-409 Braga"
+    },
+    {
+      "path": "/sponsors/okulto.png",
+      "brand": "Okulto Bar",
+      "description": ["Oferta do menu do dia completo por 5.50€", "Oferta do menu grupo por 10€","Desconto de 0,20€ na compra de um Fino","Desconto de 0,45€ na compra de uma Caneca","Desconto de 0,50€ na compra de um Somersby Absinto","Oferta do Shot da casa por 0,50€"],
+      "address": "R. Nova de Santa Cruz 23A, 4710-416 Braga"
     }
   ]
 }
