@@ -57,6 +57,12 @@
       "brand": "Okulto Bar",
       "description": ["Oferta do menu do dia completo por 5.50€", "Oferta do menu grupo por 10€","Desconto de 0,20€ na compra de um Fino","Desconto de 0,45€ na compra de uma Caneca","Desconto de 0,50€ na compra de um Somersby Absinto","Oferta do Shot da casa por 0,50€"],
       "address": "R. Nova de Santa Cruz 23A, 4710-416 Braga"
+    },
+    {
+      "path": "/sponsors/optica.jpeg",
+      "brand": "O-Olha Óticas",
+      "description": ["Desconto de 20% em armações de todas as marcas","Desconto de 20% em lente oftálmicas(unifocais e progressivas)","Desconto de 10% em lentes de contacto","Desconto de 10% em Óculos de sol de todas as marcas","Desconto de 10% em acessórios(fios de óculos, etc)","Desconto de 10% em soluções de manutenção de lentes de contacto ou hidratantes oculares"],
+      "address": "R. Nova de Santa Cruz nº64 R/C Direito, Gualtar, 4710-409 Braga"
     }
   ]
 }
