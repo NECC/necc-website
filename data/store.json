@@ -23,7 +23,7 @@
         },
         {
             "name": "Casaco NECC",
-            "paths":["/store/casaco/casaco.jpeg", "/store/casaco/casaco_back.jpeg"],
+            "paths":["/store/casaco/casaco_back.jpeg"],
             "shortDescription": "Casaco preto NECC",
             "price": "30€",
             "price_socio": "27€"
