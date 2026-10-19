@@ -3,9 +3,16 @@
         {
             "name": "T-Shirt NECC",
             "paths":["/store/tshirts/small.png", "/store/tshirts/back.png"],
-            "shortDescription": "T-Shirt branca NECC",
+            "shortDescription": "T-Shirt preta NECC",
             "price": "7.50€",
             "price_socio": "6.50€"
+        },
+        {
+            "name": "Patch NECC",
+            "paths":["/store/patches/quadrado.png", "/store/patches/retangulo.png"],
+            "shortDescription": "Patch NECC Normal/Retangular",
+            "price": "2.00€",
+            "price_socio": "1.00€"
         },
         {
             "name": "Sticker NECC",
