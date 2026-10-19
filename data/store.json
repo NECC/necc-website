@@ -10,7 +10,7 @@
         {
             "name": "Patch NECC",
             "paths":["/store/patches/quadrado.png", "/store/patches/retangulo.png"],
-            "shortDescription": "Sticker NECC Normal/Recursivo",
+            "shortDescription": "Patch NECC Normal/Retangular",
             "price": "2.00€",
             "price_socio": "1.00€"
         },
